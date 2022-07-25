@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Survey form</title>
+        <link rel="stylesheet" href="survey.css" type="text/css" />
+
+    <body>
+        <header>
+            <h1 id="title">LinkedIn Survey Form</h1>
+            <p id="description">Thanks for your expected input to improving our services for you.</p>
+        </header>
+        <main>
+            <form id="survey-form">
+                <div class="form-group">
+                    <label for="name" id="name-label">Name</label>
+                    <input type="text" id="name" name="name" placeholder="Enter your name" class="form-control"
+                        required>
+                </div>
+                <div class="form-group">
+                    <label for="email" id="email-label">Email</label>
+                    <input type="email" id="email" name="email address" placeholder="Enter your email address"
+                        class="form-control" required>
+                </div>
+                <div class="form-group">
+                    <label for="number" id="number-label">Age <span style="color:grey">(optional)</span></label>
+                    <input type="number" id="number" name="age" placeholder="Age" class="form-control" min="18"
+                        max="80">
+                </div>
+                <div class="form-group">
+                    <p>How many years have you used Linkedln</p>
+                    <select id="dropdown" name="years" class="form-control">
+                        <option value="novice">0-1</option>
+                        <option value="amateur">2-4</option>
+                        <option value="pro">5-7</option>
+                        <option value="Expert">8-10</option>
+                        <option value="ultimate">10 above</option>
+                        <option value="choice">Prefer not to say</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <p>Would you recommend a friend to LinkedIn?</p>
+                    <label>
+                        <input type="radio" value="yes" name="recommend" class="radio" checked>Yes<label>
+                            <label>
+                                <input type="radio" value="no" name="recommend" class="radio">No</label>
+                </div>
+                <div class="form-group">
+                    <p>What would you like to see us improve on?<span style="color:grey"> (mark all that you wish
+                            for)</span></p>
+                    <label>
+                        <input type="checkbox" name="want" value="interface" class="checkbox">Interface</label>
+                    <label>
+                        <input type="checkbox" name="want" value="messaging" class="checkbox">Messaging</label>
+                    <label>
+                        <input type="checkbox" name="want" value="security" class="checkbox">Security</label>
+                    <label>
+                        <input type="checkbox" name="want" value="privacy" class="checkbox">Privacy</label>
+                    <label>
+                        <input type="checkbox" name="want" value="support" class="checkbox">Support</label>
+                </div>
+                <div class="form-group">
+                    <p>Any comments? <span style="color:grey">(optional)</span></p>
+                    <textarea name="comment" id="comments">Enter your comment here...</textarea>
+                </div>
+                <div class="form-group">
+                    <button type="submit" id="submit">Submit</button>
+                </div>
+            </form>
+        </main>
+    </body>
+
+</html>

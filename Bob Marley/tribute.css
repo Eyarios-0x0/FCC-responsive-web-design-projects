@@ -1,0 +1,85 @@
+body {
+  background-color: whitesmoke;
+  text-align: center;
+}
+
+#main {
+  font-size: 16px;
+  line-height: 1.6;
+  font-family: sans-serif;
+  padding: 10px;
+  border-radius: 10%;
+  margin: 20px 10px 20px 10px;
+}
+
+#title {
+  font-size: 40px;
+  font-family: "supermercado one", serif;
+  text-align: center;
+}
+
+#img-div {
+  padding: 10px;
+  margin: auto;
+  border-radius: 20px;
+  background: repeating-linear-gradient(
+    90deg,
+    black 10px,
+    yellow 30px,
+    green 50px,
+    black 10px
+  );
+}
+
+#img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+#img-caption {
+  font-weight: bold;
+  font-style: italic;
+  font-size: large;
+}
+
+#tribute-info {
+  text-transform: capitalize;
+}
+
+#legacy {
+  text-align: center;
+  font-weight: bold;
+}
+
+#tribute-link {
+  font-weight: 100;
+  font-style: italic;
+}
+
+h2 {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+h3 {
+  font-style: italic;
+}
+
+h4 {
+  font-size: 20px;
+  text-align: center;
+  font-family: serif;
+}
+
+ul {
+  text-align: left;
+  max-width: 50%;
+  margin: auto;
+}
+
+.marijuana {
+  font-style: italic;
+  text-align: center;
+  box-shadow: 10px 10px 5px green, -10px -10px black;
+}

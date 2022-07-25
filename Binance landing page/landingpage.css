@@ -1,0 +1,214 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  color: #ffffff;
+  font-family: monospace;
+  line-height: 1.6;
+  background-image: url("https://wallpapercave.com/wp/wp4597699.jpg");
+  opacity: 1;
+}
+
+a {
+  text-decoration: none;
+  font-family: lobster, cursive;
+  color: #005555;
+  font-weight: bold;
+}
+
+#header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #f7ff93;
+}
+
+#header-image {
+  height: 70px;
+  width: 150px;
+  margin: 10px 100px 10px 0px;
+  transition: width height 5s;
+}
+
+#header-image:hover {
+  width: 300px;
+  height: 80px;
+}
+
+#nav-bar {
+  margin-left: 90px;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  font-size: 20px;
+}
+
+@media (max-width: 600px) {
+  #nav-bar {
+    flex-direction: column;
+  }
+}
+
+.nav-link {
+  padding: 10px;
+}
+
+.use {
+  font-family: "Rubik Puddles", cursive;
+  font-weight: bold;
+  font-size: 25px;
+  color: #ff0000;
+  text-align: center;
+  margin-top: 100px;
+}
+
+#form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (min-width: 1500px) {
+  #form {
+    flex-direction: row;
+  }
+}
+
+#submit {
+  margin-top: 20px;
+  background-color: #ff0000;
+  color: #ffff00;
+  border: none;
+  font-size: 25px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: color 3s ease-in-out;
+}
+
+#submit:hover {
+  color: #ff5f00;
+}
+
+input[type="email"] {
+  transition: width 0.1s linear;
+}
+
+input[type="email"]:focus {
+  width: 350px;
+}
+
+h2 {
+  font-family: serif;
+  font-weight: bold;
+  text-decoration: underline;
+  color: #f7ff93;
+}
+
+h3 {
+  font-family: "Lobster", cursive;
+  background-color: #ff0000;
+  width: 100%;
+  margin-top: 0px;
+}
+
+#tutorial {
+  text-align: center;
+}
+
+#about-us {
+  font-family: serif;
+}
+
+#crypto {
+  font-family: serif;
+}
+
+#horizontal {
+  display: flex;
+  flex-direction: row;
+}
+
+@media (max-width: 550px) {
+  #horizontal {
+    flex-direction: column;
+  }
+}
+
+.top {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: calc(100% / 2);
+  border: 2px solid;
+  border-radius: 0.5rem;
+  margin: 10px;
+}
+
+.select {
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+  background-color: #ffff00;
+  width: 20%;
+  margin: 10px 0px 15px 30px;
+  padding: 10px 0px;
+  border: none;
+}
+
+@media (max-width: 550px) {
+  .select {
+    font-size: 10px;
+  }
+}
+
+button:hover {
+  background-color: #008000;
+}
+
+@media (max-width: 550px) {
+  button:hover {
+    background-color: #0000ff;
+  }
+}
+
+ul {
+  text-align: justify;
+  margin-right: 25px;
+  font-weight: bold;
+  font-size: 20px;
+  list-style: none;
+}
+
+footer {
+  background-color: #eee;
+  text-align: right;
+  padding: 1px 10px 0px 0px;
+  margin-top: 40px;
+  font-family: lobster, cursive;
+  color: #000000;
+}
+
+@media (max-width: 550px) {
+  footer {
+    width: 100%;
+  }
+}
+
+footer > ul {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  padding: 0 0 0 750px;
+  margin-bottom: -15px;
+}
+
+footer > p {
+  margin-right: 40px;
+}

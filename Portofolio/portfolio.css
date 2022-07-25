@@ -1,0 +1,195 @@
+@import url("https://fonts.googleapis.com/css2?family=Lobster&family=Rubik+Puddles&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lobster&family=Orelega+One&family=Rubik+Puddles&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  line-height: 1.6;
+  font-family: sans-serif;
+  font-size: 20px;
+  color: #fdf6ec;
+}
+
+a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+#navbar {
+  position: fixed;
+  display: flex;
+  top: 0px;
+  right: 0px;
+  padding: 20px;
+  background-color: #800000;
+  width: 100%;
+  z-index: 1;
+}
+
+#navbar a {
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: bold;
+  font-family: "Rubik Puddles", cursive;
+  font-size: 30px;
+}
+
+@media (max-width: 900px) {
+  #navbar a {
+    font-size: 10px;
+  }
+}
+
+.navsection a:hover {
+  background-color: #f6ec;
+}
+
+.navsection {
+  width: 100%;
+  word-spacing: 50px;
+  text-align: right;
+}
+
+#welcome-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 100vh;
+  width: 100vw;
+  background-color: #3a3845;
+}
+
+.welcome {
+  line-height: 1;
+}
+
+.welcome h1 {
+  font-size: 50px;
+  font-family: "Orelega One", cursive;
+  color: #fdf6ec;
+}
+
+.welcome p {
+  font-family: "Lobster", cursive;
+  color: #f68989;
+}
+
+#projects {
+  width: 100vw;
+  padding: 10rem 2rem;
+  text-align: center;
+  background-color: #1c0a00;
+}
+
+#projects h1 {
+  font-size: 25px;
+  text-decoration: underline;
+  font-family: serif;
+  padding: 20px 0px;
+}
+
+.works {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-gap: 2rem;
+  width: 100%;
+}
+
+@media (max-width: 850px) {
+  .works {
+    grid-template-columns: auto;
+  }
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.project-title {
+  background-color: #000000;
+  border-radius: 5px;
+  padding: 2rem 0rem;
+  font-size: 20px;
+  position: relative;
+  bottom: 20px;
+}
+
+span {
+  color: #000000;
+  font-weight: bold;
+}
+
+span:hover {
+  color: #008080;
+}
+
+button {
+  font-family: serif;
+  font-size: 30px;
+  border: none;
+  background-color: #000000;
+  padding: 10px;
+  margin-top: 15rem;
+  color: #ffffff;
+  transition: 3s ease-in-out;
+}
+
+button:hover {
+  background-color: #0000ff;
+}
+
+#contact {
+  background-color: #a97155;
+  width: 100vw;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  line-height: 0.5px;
+}
+
+#contact h2 {
+  font-size: 30px;
+  font-family: serif;
+}
+
+#contact p {
+  font-family: "Lobster", cursive;
+  padding-bottom: 50px;
+  margin-top: 0px;
+}
+
+.contact-link {
+  word-spacing: 20px;
+  font-size: 30px;
+  text-shadow: 2px 2px #ff0000;
+}
+
+.contact-link:hover {
+  transform: translate(20px, 20px);
+}
+
+@media (max-width: 800px) {
+  .contact-link {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+footer {
+  font-family: monospace;
+  font-size: small;
+  color: #000000;
+  display: flex;
+  margin: 20px;
+  padding: 2px;
+}
